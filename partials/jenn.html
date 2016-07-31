@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      <h1 class="jennText">She is Jenn! Hear her Roar!</h1>
+      <img class="lionCub" src="images/lion-cub-roar.gif" alt="Lion cub playing">
+      <h3 class="jennText">Let's take a gander into some of Jenn's coding abilities</h3>
+      <div class="badgeSearch">
+        <input class="search" type="text" ng-model="badgeSearch" placeholder="Sort by Name">
+      </div>
+    </div>
+    <!-- Need to figure out why formatting is messed up with more than 12 badges -->
+      <jennsBadges ng-repeat="badge in badges | limitTo: 12 | filter:badgeSearch">
+        <div class="four columns">
+          <img class="jennBadges" ng-src="{{badge.icon_url}}" alt="Treehouse badge:{{badge.name}}">
+          <p class="jennText">{{badge.name}}</p>
+          <p class="jennText">{{badge.earned_date}}</p>
+        </div>
+      </jennsBadges>
+  </div>
+</div>

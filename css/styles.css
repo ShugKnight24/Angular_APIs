@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1B264F;
+}
+
+header h1 {
+  color: #DB162F;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 5px;
+}
+
+nav ul li a{
+  color: #DB162F;
+  background: #1B264F;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.active a{
+  color: #ffffff;
+  background-color: blue;
+  text-decoration: underline;
+}
+/* Dog Partial Styling */
+/* Cat Partial Styling */
+
+/* Jenn Partial Styling */
+
+.jennText{
+  color: #F2AF29;
+  text-align: center;
+}
+
+.lionCub {
+  border-radius:50px;
+  border:2px solid #F2AF29;
+  display: block;
+  margin: auto;
+}
+
+.search {
+  border: 2px solid red;
+}
+
+.badgeSearch {
+  border-radius:5px;
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+   color: blue;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: blued;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: blue;
+}
+
+:-ms-input-placeholder {
+   color: blue;
+}
+
+.jennBadges  {
+  max-width: 200px;
+  max-height: 200px;
+  display: block;
+  margin: auto;
+}

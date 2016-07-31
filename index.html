@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gifs Gone Wild</title>
+	<link rel="stylesheet" href="css/normalize.css" charset>
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-app="apiApp">
+		<header class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<h1>Gifs Galore</h1>
+				</div>
+			</div>
+			<nav ng-controller="navController">
+		    <ul class="nav">
+		      <li ng-class="{active: isActive('/dog')}"><a href="#/dog">Yay Doge</a></li>
+		      <li ng-class="{active: isActive('/cat')}"><a href="#/cat">Ew... Cats</a></li>
+					<li ng-class="{active: isActive('/jenn')}"><a href="#/jenn">The Mighty Jenn Kron</a></li>
+		    </ul>
+			</nav>
+		</header>
+	</div>
+	<div class="cotainer">
+		<div class="row">
+			<ng-view></ng-view>
+		</div>
+	</div>
+
+	<script src="js/angular.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers/catctrl.js"></script>
+	<script src="js/controllers/dogctrl.js"></script>
+	<script src="js/controllers/navcontroller.js"></script>
+	<script src="js/controllers/jenncontroller.js"></script>
+	<script src="js/services/jennservice.js"></script>
+	<script src="js/services/catservice.js"></script>
+	<script src="js/services/dogservice.js"></script>
+</body>
+</html>
