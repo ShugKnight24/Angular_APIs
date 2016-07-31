@@ -36,8 +36,29 @@ nav ul li a{
   text-decoration: underline;
 }
 /* Dog Partial Styling */
-/* Cat Partial Styling */
+.dogeText{
+  color: #F2AF29;
+  text-align: center;
+}
 
+.dogeGifs{
+  border-radius:50px;
+  border:2px solid #F2AF29;
+  max-width: 200px;
+  max-height: 200px;
+}
+/* Cat Partial Styling */
+.catText{
+  color: #F2AF29;
+  text-align: center;
+}
+
+.catGifs{
+  border-radius:50px;
+  border:2px solid #F2AF29;
+  max-width: 200px;
+  max-height: 200px;
+}
 /* Jenn Partial Styling */
 
 .jennText{
@@ -82,4 +103,10 @@ nav ul li a{
   max-height: 200px;
   display: block;
   margin: auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 26px;
+  color: #F2AF29;
 }

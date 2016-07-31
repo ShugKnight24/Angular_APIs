@@ -1,7 +1,16 @@
-<div class="container">
-  <div class="row">
-    <div class="four columns" ng-controller="catCtrl" ng-repeat="cat in cats">
-      <img ng-src="{{cat.images.fixed_height.url}}" alt="nope">
+<kittyGifs>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h1 class="catText">On the other hand, who likes cat gifs?</h1>
+        <h3 class="catText">Yuuuuucccccck. Gross. I guess if we have to.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns" ng-controller="catCtrl" ng-repeat="cat in cats">
+        <!-- Need to figure out why formatting is messed up -->
+        <img class="catGifs" ng-src="{{cat.images.fixed_height.url}}" alt="nope">
+      </div>
     </div>
   </div>
-</div>
+</kittyGifs>
