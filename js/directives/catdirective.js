@@ -7,6 +7,5 @@ app.directive("kittyGifs", function() {
     restrict: "AE",
     templateUrl: "partials/cat.html",
     replace: false
-
   };
 });
