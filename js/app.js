@@ -3,8 +3,8 @@ var app = angular.module('apiApp', ["ngRoute"]);
 app.config(function($routeProvider){
 	$routeProvider
 	.when('/',{
-		templateUrl:"partials/dog.html",
-		controller: "dogCtrl"
+		templateUrl:"partials/home.html",
+		controller: "homeController"
 		})
 	.when('/dog',{
 		templateUrl:"partials/dog.html",
@@ -19,6 +19,6 @@ app.config(function($routeProvider){
 		controller:"jennController"
 		})
 	.otherwise({
-		redirect:"/dog"
+		redirect:"/"
 	});
 });

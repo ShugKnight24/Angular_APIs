@@ -9,19 +9,25 @@
 </head>
 <body ng-app="apiApp">
 		<header class="container">
+
 			<div class="row">
 				<div class="twelve columns">
-					<h1>Gifs Galore</h1>
+					<h1><a href="#/home">Gifs Galore</a></h1>
 				</div>
 			</div>
+
 			<nav ng-controller="navController">
 		    <ul class="nav">
+					<li ng-class="{active: isActive('/')}"><a href="#/home">Home</a></li>
+
 		      <li ng-class="{active: isActive('/dog')}"><a href="#/dog">Yay Doge</a></li>
 		      <li ng-class="{active: isActive('/cat')}"><a href="#/cat">Ew... Cats</a></li>
 					<li ng-class="{active: isActive('/jenn')}"><a href="#/jenn">The Mighty Jenn Kron</a></li>
 		    </ul>
 			</nav>
+
 		</header>
+
 		<div class="pageContainer">
 			<div class="container">
 				<div class="row">
@@ -29,23 +35,28 @@
 				</div>
 			</div>
 	</div>
-	<footer>
+
+	<footer class="footer">
 		<div class="row">
 			<div class="twelve">
 				<p>Copyright &copy; 2016 Charlene Okwu, Jennifer Kron, Ray Walters, and Shugmi Shumunov</p>
 			</div>
 		</div>
 	</footer>
+
 	<script src="js/angular.js"></script>
 	<script src="js/angular-route.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/controllers/homeController.js"></script>
 	<script src="js/controllers/catctrl.js"></script>
 	<script src="js/controllers/dogctrl.js"></script>
 	<script src="js/controllers/navcontroller.js"></script>
 	<script src="js/controllers/jenncontroller.js"></script>
+	<script src="js/services/homeservice.js"></script>
 	<script src="js/services/jennservice.js"></script>
 	<script src="js/services/catservice.js"></script>
 	<script src="js/services/dogservice.js"></script>
+	<script src="js/directives/homedirective.js"></script>
 	<script src="js/directives/dogdirectives.js"></script>
 	<script src="js/directives/catdirective.js"></script>
 	<script src="js/directives/jenndirective.js"></script>
