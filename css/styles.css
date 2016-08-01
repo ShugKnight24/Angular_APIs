@@ -3,12 +3,30 @@
 }
 
 body {
-  background-color: #1B264F;
+  margin: 0;
+  background-color: white;
+}
+
+.pageContainer{
+  /*background-color: #14248A;*/
 }
 
 header h1 {
-  color: #DB162F;
+  color: black;
   text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 nav {
@@ -18,23 +36,33 @@ nav {
 nav ul li {
   list-style-type: none;
   display: inline;
-  padding: 5px;
+  padding: 25px;
+  text-transform: uppercase;
+  font-family: Tahoma;
 }
 
 nav ul li a{
-  color: #DB162F;
-  background: #1B264F;
-  font-size: 24px;
-  font-weight: bold;
+  color: black;
+  font-size: 16px;
+  font-family: Tahoma;
+  /*font-weight: bold;*/
   text-align: center;
   text-decoration: none;
 }
 
-.active a{
-  color: #ffffff;
-  background-color: blue;
-  text-decoration: underline;
+
+nav ul li a:active {
+  color: white;
 }
+
+nav ul li a:hover {
+  color: white;
+  background-color: black;
+  padding: 15px 10px 15px 10px;
+  text-decoration: none;
+
+}
+
 /* Dog Partial Styling */
 .dogeText{
   color: #F2AF29;
@@ -105,8 +133,9 @@ nav ul li a{
   margin: auto;
 }
 
-footer {
+.footer {
   text-align: center;
-  font-size: 26px;
-  color: #F2AF29;
+  color: white;
+  background-color: black;
+  padding-top: 20px;
 }
