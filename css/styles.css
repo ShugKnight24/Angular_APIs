@@ -6,6 +6,13 @@ body {
   background-color: #1B264F;
 }
 
+<<<<<<< HEAD
+=======
+.pageContainer{
+  background-color: #14248A;
+}
+
+>>>>>>> d8180a743d21c447132325bed71f08eb01763303
 header h1 {
   color: #DB162F;
   text-align: center;

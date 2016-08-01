@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <dogeGifs>
   <div class="container">
     <div class="row">
@@ -14,3 +15,19 @@
     </div>
   </div>
 </dogeGifs>
+=======
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      <h1 class="dogeText">Who Doesn't Love A Doge Gif?</h1>
+      <h3 class="dogeText">A savage that's who!</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="four columns" ng-controller="dogCtrl" ng-repeat="dog in dogs">
+      <!-- Need to figure out why formatting is messed up -->
+      <img class="dogeGifs" ng-src="{{dog.images.fixed_height.url}}" alt="nope">
+    </div>
+  </div>
+</div>
+>>>>>>> d8180a743d21c447132325bed71f08eb01763303

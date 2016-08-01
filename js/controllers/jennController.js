@@ -21,5 +21,4 @@ app.controller('jennController',["$scope","jennBadges", function($scope, jennBad
     });
 
 
-
 }]);
