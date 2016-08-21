@@ -18,6 +18,10 @@ app.config(function($routeProvider){
 		templateUrl:"partials/jenn.html",
 		controller:"jennController"
 		})
+	.when('/shug',{
+		templateUrl:"partials/shug.html",
+		controller:"shugController"
+		})
 	.otherwise({
 		redirect:"/"
 	});

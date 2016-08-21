@@ -36,7 +36,6 @@ nav {
 nav ul li {
   list-style-type: none;
   display: inline;
-  padding: 25px;
   text-transform: uppercase;
   font-family: Tahoma;
 }
@@ -60,7 +59,6 @@ nav ul li a:hover {
   background-color: black;
   padding: 15px 10px 15px 10px;
   text-decoration: none;
-
 }
 
 /* Dog Partial Styling */
